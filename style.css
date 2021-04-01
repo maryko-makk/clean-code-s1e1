@@ -1,6 +1,6 @@
 /* Basic Style */
 
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -13,11 +13,11 @@ body {
   text-align: right;
 }
 
-.header img {
+.header__image {
   width: 100%;
 }
 
-.header .more-info {
+.header__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -60,7 +60,7 @@ button {
   outline: none;
 }
 
-button {
+.main__button {
   background: none;
   border: 0px;
   color: #888;
@@ -70,7 +70,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.main__button:hover {
   color: #3a3a3a;
 }
 
@@ -149,17 +149,17 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-li > button.delete:hover {
+li > .main__button_delete:hover {
   color: #cf2323;
 }
 
-button.delete img {
+.main__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.main__img:hover {
   transform: rotateZ(0);
 }
 
@@ -176,11 +176,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+ul li.edit_mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.edit_mode label {
   display: none;
 }
