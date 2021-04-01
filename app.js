@@ -34,7 +34,7 @@ var createNewTaskElement=function(taskString){
   var deleteButton=document.createElement("button");//delete button
   var deleteButtonImg=document.createElement("img");//delete button image
   label.innerText=taskString;
-  label.className='task';
+  label.className="task";
   label.classList.add("main__label");
 
   //Each elements, needs appending
@@ -46,10 +46,10 @@ var createNewTaskElement=function(taskString){
   editInput.classList.add("main__input", "main__input_text");
 
   editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-  editButton.classList.add('main__button', 'main__button_edit');
+  editButton.classList.add("main__button", "main__button_edit");
 
-  deleteButton.classList.add('main__button', 'main__button_delete');
-  deleteButtonImg.src='./remove.svg';
+  deleteButton.classList.add("main__button", "main__button_delete");
+  deleteButtonImg.src="./remove.svg";
   deleteButtonImg.setAttribute("alt", "delete button");
   deleteButtonImg.className="main__img";
   deleteButton.appendChild(deleteButtonImg);
@@ -82,7 +82,7 @@ var editTask=function(){
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
   var listItem=this.parentNode;
-  var editInput=listItem.querySelector('input[type=text]');
+  var editInput=listItem.querySelector(`input[type="text"]`);
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".main__button_edit");
   var containsClass=listItem.classList.contains("edit_mode");
